@@ -1,0 +1,7 @@
+.NavBar, .nav-toggle {
+  height: 65px;
+}
+
+.NavBar #logo {
+  max-height: 3rem;
+}

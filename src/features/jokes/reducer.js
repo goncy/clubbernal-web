@@ -1,7 +1,4 @@
 // @flow
-
-import {List} from 'immutable'
-
 import {fetchJoke} from './actions'
 
 type JokesAction = {
@@ -17,14 +14,14 @@ type JokeResponse = {
   value: string
 }
 
-type JokesState = List<JokeResponse>
+type JokesState = JokeResponse[]
 
 const jokes = (
-  state: JokesState = List(),
+  state: JokesState = [],
   {type, payload}: JokesAction) => {
   switch (type) {
     case fetchJoke.SUCCESS:
-      return state.push(payload)
+      return state.concat(payload)
     default:
       return state
   }

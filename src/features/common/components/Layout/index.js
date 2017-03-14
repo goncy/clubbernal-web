@@ -1,14 +1,18 @@
 import React from 'react'
 
+import NavBar from '../NavBar'
+
 import './Layout.css'
 
 const Layout = ({children}) => (
   <div className="Layout">
-    <div className="Layout-header">
-      <h2>Chuck jokes</h2>
-    </div>
-    <div className="Layout-intro">
-      {children}
+    <NavBar />
+    <div className="section">
+      <div className="container">
+        <div className="box">
+          {children}
+        </div>
+      </div>
     </div>
   </div>
 )
