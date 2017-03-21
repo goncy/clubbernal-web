@@ -1,0 +1,7 @@
+.ContactInformation .box .heading{
+  font-size: 16px;
+}
+
+.ContactInformation .box .heading span{
+  vertical-align: middle;
+}

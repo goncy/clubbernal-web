@@ -1,0 +1,11 @@
+.Home .notification {
+  padding: 1.25rem;
+}
+
+.image-gallery-fullscreen-button:hover::before, .image-gallery-play-button:hover::before, .image-gallery-left-nav:hover::before, .image-gallery-right-nav:hover::before {
+  color: #c02126 !important;
+}
+
+.image-gallery-thumbnail.active {
+  border: 4px solid #c02126 !important;
+}

@@ -21,4 +21,15 @@ export const hasActivities = R.pipe(
   R.not
 )
 
-export const getCategories = R.keys
+export const getCategoriesNames = R.map(
+  item => ({
+    slug: item.slug,
+    name: item.name
+  })
+)
+
+export const filterActivities = (filter, list) => filter
+  ? R.filter(
+      item => item.category === filter, list
+    )
+  : R.identity(list)

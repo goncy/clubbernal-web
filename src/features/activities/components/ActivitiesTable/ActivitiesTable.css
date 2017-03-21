@@ -1,0 +1,19 @@
+.ActivitiesTable .tabs li {
+  margin-top: 0;
+}
+
+.ActivitiesTable tbody tr td {
+  vertical-align: middle;
+}
+
+.ActivitiesTable table {
+  margin-top: -1px !important;
+}
+
+.ActivitiesTable .tabs {
+  margin-bottom: 0;
+}
+
+.ActivitiesTable .tabs ul {
+  margin: auto 0;
+}

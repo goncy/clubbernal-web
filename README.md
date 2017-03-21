@@ -1,25 +1,4 @@
-#React, Redux, Redux Sagas, Flow, Immutable starter (and React router)
+##Web para el Club Bernal
 
-Starter project based on create-react-app
----
-
-##Libraries
-* React
-* Redux
-* Immutable
-* Redux sagas
-* Flow
-* React router (new)
-
-##Code style
-* Standard
-
-##Install
-```
-yarn install
-```
-
-##Init
-```
-yarn start
-```
+###Demo
+https://goncy.github.io/clubbernal-web

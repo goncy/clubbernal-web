@@ -1,0 +1,7 @@
+.ActivityInformationModal .modal-card-title {
+  margin-bottom: 0 !important;
+}
+
+.ActivityInformationModal .modal-card-foot {
+  justify-content: flex-end;
+}

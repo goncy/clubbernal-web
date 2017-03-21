@@ -1,6 +1,6 @@
 import {fork} from 'redux-saga/effects'
 
-import jokes from '../../features/jokes'
+import activities from '../../features/activities'
 
 function startSagas (...sagas) {
   return function * rootSaga () {
@@ -9,5 +9,5 @@ function startSagas (...sagas) {
 }
 
 export default startSagas(
-  ...jokes.sagas
+  ...activities.sagas
 )

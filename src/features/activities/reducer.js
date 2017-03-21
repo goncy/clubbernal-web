@@ -1,6 +1,5 @@
 // @flow
 import {fetchActivities} from './actions'
-import defaultPrices from './data/prices.json'
 
 type ActivityAction = {
   type: string,
@@ -8,19 +7,51 @@ type ActivityAction = {
 }
 
 type Activity = {
-  name: string,
-  price: string,
-  category: string
+  [key: string]: {
+    schedule: string,
+    price: string,
+    category: string
+  }
 }
 
-type activitiesState = Activity[]
+type Category = {
+  [key: string]: {
+    description: string,
+    name: string
+  }
+}
+
+type activitiesState = {
+  list: Activity,
+  categories: Category,
+  status: 'init' | 'success' | 'pending' | 'failure'
+}
 
 const activities = (
-  state: activitiesState = defaultPrices,
+  state: activitiesState = {
+    list: {},
+    categories: {},
+    status: 'init'
+  },
   {type, payload}: ActivityAction) => {
   switch (type) {
     case fetchActivities.SUCCESS:
-      return payload
+      return {
+        ...state,
+        list: payload.list,
+        categories: payload.categories,
+        status: 'success'
+      }
+    case fetchActivities.START:
+      return {
+        ...state,
+        status: 'pending'
+      }
+    case fetchActivities.FAILURE:
+      return {
+        ...state,
+        status: 'failure'
+      }
     default:
       return state
   }

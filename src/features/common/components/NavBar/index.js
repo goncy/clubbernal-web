@@ -88,14 +88,6 @@ class NavBar extends Component {
           >
             Actividades
           </NavLink>
-          <NavLink
-            exact
-            activeClassName='is-active'
-            className="nav-item is-tab"
-            to="/precios"
-          >
-            Precios
-          </NavLink>
         </div>
       </nav>
     )
