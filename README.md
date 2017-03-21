@@ -1,4 +1,4 @@
-##Web para el Club Bernal
+## Web para el Club Bernal
 
-###Demo
+### Demo
 https://goncy.github.io/clubbernal-web
